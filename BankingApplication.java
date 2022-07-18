@@ -5,7 +5,8 @@ public class BankingApplication {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
-
+        BankAccount obj1 = new BankAccount("XYZ", "BA0001");
+        obj1.showMenu();
     }
 }
 
@@ -94,9 +95,11 @@ class BankAccount {
                     System.out.println("----------------");
                     getPreviousTransation();
                     System.out.println("----------------");
-                    int amount = scanner.nextInt();
-                    deposit(amount);
                     System.out.println("\n");
+                    break;
+
+                case 'E':
+                    System.out.println("****************");
                     break;
 
                 default:
